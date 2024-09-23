@@ -2,15 +2,24 @@
 
 hecho para la evaluacion de saberes de la Escuela Tecnica EEST nº2 de 3º1ª
 
-	to do(english):
+to do(english):
+
  	-better map editor (with mouse support, lights and beter use of the win32 api
 	-online
  	-weapons
 	-better handling of textures so you can add custom textures for the maps
-	-3D animations
-	-add thes list in spanish lol
+	-3D models & animations
+	
+ to do(español):
 
-	Integrantes: 
+  	-mejor editor de mapar (con soporte para mouse, luces y mejor uso de la api de win32)
+   	-multijugador en linea
+    	-armas
+	-mejor manejo de las texturas asi podes usar tus propias texturas en los mapas
+ 	-Modelos 3D y animaciones
+
+
+Integrantes: 
 	-Dante Schaer (programador principal)
 	-Juan Simon Pizzo (Programador)
 	-Miqueas Cantuta
