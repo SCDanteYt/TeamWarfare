@@ -1,0 +1,20 @@
++debug title
+	|obj_editor
+	|obj_loadmap
+	|obj_debugtitle
++game
+	|obj_play
+	+map
+		|obj_floor
+		|obj_floor2
+		|obj_corner
+		|obj_mapL
+		|obj_cyl
+		|obj_wall
++editor
+	|obj_ui
+	|obj_cursor
+	|obj_map
+	|obj_camera
+|obj_light
+|obj_lightManager
