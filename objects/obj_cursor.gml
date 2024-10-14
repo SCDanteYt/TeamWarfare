@@ -7,7 +7,7 @@ applies_to=self
 z=0
 t=1
 tex=0
-
+multiplier=1
 xst=0
 yst=0
 zst=0
@@ -58,6 +58,13 @@ switch(t){
     }
 
 }draw_set_color(c_white)
+#define KeyPress_16
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+multiplier=10
 #define KeyPress_49
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -166,28 +173,29 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-y-=1
+
+y-=1*multiplier
 #define KeyPress_74
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-x-=1
+x-=1*multiplier
 #define KeyPress_75
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-y+=1
+y+=1*multiplier
 #define KeyPress_76
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-x+=1
+x+=1*multiplier
 #define KeyPress_77
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -248,3 +256,10 @@ xst=x
 yst=y
 zst=z
 drawing=1
+#define KeyRelease_16
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+multiplier=1
