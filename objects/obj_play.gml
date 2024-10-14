@@ -184,7 +184,7 @@ action_id=603
 applies_to=self
 */
 
-d3d_set_projection_ext(x,y,z+16,x+cos(degtorad(direction)) * zdir,y-sin(degtorad(direction))*zdir,zdirt*16+(z+16),0,0,1,100,1,0.1,401)
+d3d_set_projection_ext(x,y,z+16,x+cos(degtorad(direction)) * zdir,y-sin(degtorad(direction))*zdir,zdirt*16+(z+16),0,0,1,100,1,0.1,410)
 #define KeyPress_32
 /*"/*'/**//* YYD ACTION
 lib_id=1

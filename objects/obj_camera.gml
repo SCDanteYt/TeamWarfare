@@ -128,8 +128,9 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-d3d_set_projection(x,y,z,x+cos(degtorad(direction)) * zdir,y-sin(degtorad(direction))*zdir,(zdirt*16)+z,0,0,1)
-d3d_draw_ellipsoid(x-200,y-200,z-200,x+200,y+200,z+200,background_get_texture(background5),1,1,50)
+
+d3d_set_projection_ext(x,y,z,x+cos(degtorad(direction)) * zdir,y-sin(degtorad(direction))*zdir,zdirt*16+z,0,0,1,100,1,0.1,410)
+d3d_draw_ellipsoid(x-400,y-400,z-400,x+400,y+400,z+400,background_get_texture(background5),1,1,50)
 #define KeyPress_32
 /*"/*'/**//* YYD ACTION
 lib_id=1
