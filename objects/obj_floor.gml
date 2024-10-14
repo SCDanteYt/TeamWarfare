@@ -12,6 +12,8 @@ curz=0
 tex=0
 noDraw=0
 alarm[0]=1
+light=0
+color=0
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -49,33 +51,27 @@ if !noDraw
     curz=scr_funlineal(x+.01,z1,x2,z2,obj_play.x)
 
 depth= curz
-#define Keyboard_107
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-z1+=.1
-z2+=.1
 #define Draw_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-draw_text(x,y,string(curz))
+
 if !noDraw
 {
-
-
-
 d3d_primitive_begin_texture(pr_trianglelist,tex);
+
     d3d_vertex_texture(x2,y2,z2,0,0)
+
     d3d_vertex_texture(x2,y,z2,0,1)
+
     d3d_vertex_texture(x,y2,z1,1,0)
+
     d3d_vertex_texture(x,y,z1,1,1)
+
     d3d_vertex_texture(x2,y,z2,0,1)
+
     d3d_vertex_texture(x,y2,z1,1,0)
 d3d_primitive_end();
-
 }

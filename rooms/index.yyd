@@ -2,3 +2,6 @@ rm_editor
 rm_debug
 rm_mapl
 
+rm_serverTests
+rm_isd
+rm_title

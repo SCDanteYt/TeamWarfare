@@ -1,4 +1,4 @@
-obj_camera
+
 obj_cursor
 obj_map
 obj_ui
@@ -35,5 +35,17 @@ obj_corner
 
 
 obj_floor2
+
+
+obj_camera
 obj_light
-obj_lightManager
+obj_servertest
+obj_mplaycntr
+obj_gui
+obj_skybox
+obj_title
+obj_editortitle
+
+
+obj_playgame
+object50

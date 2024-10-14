@@ -7,8 +7,7 @@ applies_to=self
 z=0
 t=1
 tex=0
-global.amap[0,6]=0
-global.amapW=0
+
 xst=0
 yst=0
 zst=0
@@ -54,8 +53,8 @@ switch(t){
     break;
     case 8:d3d_draw_cylinder(x-6,y-6,z,x+6,y+6,z+16,-1,0,0,1,12)
     break;
-    case 9:d3d_light_define_point(0,x,y,z,10,c_white)
-    d3d_light_enable(0,true)
+    case 9:d3d_draw_wall(x-cos(degtorad(obj_camera.direction+90)),y+sin(degtorad(obj_camera.direction+90)),z+1,x+cos(degtorad(obj_camera.direction+90)),y-sin(degtorad(obj_camera.direction+90)),z-1,sprite_get_texture(spr_lampara,0),1,1)
+    break;
     }
 
 }draw_set_color(c_white)
@@ -189,7 +188,7 @@ action_id=603
 applies_to=self
 */
 x+=1
-#define KeyPress_78
+#define KeyPress_77
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603

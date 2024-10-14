@@ -10,3 +10,13 @@
 	|sprite21
 	|spr_cur
 |sprite22
+|spr_lampara
+|sprite27
++gui game
+	|spr_life
+	|sprite29
+	|sprite30
++555
+	|sprite31
+	|sprite32
+	|sprite33

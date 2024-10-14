@@ -4,14 +4,15 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+
 mv=0
 random_set_seed(0134987)
 d3d_start()
 d3d_set_culling(false)
 d3d_set_zwriteenable(true)
 col=0
-d3d_set_shading(false)
-//d3d_set_lighting(true)
+d3d_light_define_ambient(c_white)
+
 ofx=window_get_x() + window_get_width()/2
 ofy=window_get_y() + window_get_height()/2
 sp=0
@@ -50,14 +51,15 @@ window_get_width() Returns the current width of the window.
 window_get_height() Returns the current height of the window.
 */
 
-
 prevx=display_mouse_get_x()
 prevy=display_mouse_get_y()
-display_mouse_set(ofx ,ofy)
-movx=ofx-prevx
-movy=ofy-prevy
-direction+=movx/4
 
+if !keyboard_check(ord("M")){
+    display_mouse_set(ofx ,ofy)
+    movx=ofx-prevx
+    movy=ofy-prevy
+    direction+=movx/4
+}
 zdir+=movy/400
 if (zdir>6.26){
     zdir=6.26
@@ -181,7 +183,8 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-d3d_set_projection(x,y,z+16,x+cos(degtorad(direction)) * zdir,y-sin(degtorad(direction))*zdir,zdirt*16+(z+16),0,0,1)
+
+d3d_set_projection_ext(x,y,z+16,x+cos(degtorad(direction)) * zdir,y-sin(degtorad(direction))*zdir,zdirt*16+(z+16),0,0,1,100,1,0.1,401)
 #define KeyPress_32
 /*"/*'/**//* YYD ACTION
 lib_id=1

@@ -49,21 +49,13 @@ if !noDraw
     curz=scr_funlineal(y+.01,z1,y2,z2,obj_play.y)
 
 depth= curz
-#define Keyboard_107
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-z1+=.1
-z2+=.1
 #define Draw_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-draw_text(x,y,string(curz))
+
 if !noDraw
 {
 

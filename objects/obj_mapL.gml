@@ -73,6 +73,9 @@ for (i=0;i<global.amapW;i+=1){
     case 8:femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_play)
     femboy.z=global.amap[i,5]
     break;
+    case 9:femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_light)
+    femboy.z=global.amap[i,5]
+    break;
     }
 
 }

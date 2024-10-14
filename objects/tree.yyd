@@ -1,6 +1,12 @@
++Title Screen
+	|obj_title
+	|obj_editortitle
+	|obj_playgame
+	|object50
 +debug title
 	|obj_editor
 	|obj_loadmap
+	|obj_servertest
 	|obj_debugtitle
 +game
 	|obj_play
@@ -11,10 +17,13 @@
 		|obj_mapL
 		|obj_cyl
 		|obj_wall
+	|obj_gui
+	|obj_skybox
 +editor
+	|obj_map
 	|obj_ui
 	|obj_cursor
-	|obj_map
 	|obj_camera
-|obj_light
-|obj_lightManager
+	|obj_light
++online tests
+	|obj_mplaycntr
