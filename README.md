@@ -19,9 +19,4 @@ to do(english):
  	-Modelos 3D y animaciones
 
 
-Integrantes: 
-	-Dante Schaer (programador principal)
-	-Juan Simon Pizzo (Programador)
-	-Miqueas Cantuta
-	-Luciano Barsocchini
- 	hecho para la evaluacion de saberes de la Escuela Tecnica EEST nº2 de 3º1ª
+
