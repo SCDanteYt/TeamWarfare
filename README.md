@@ -1,4 +1,4 @@
-# TF2-Inspired Prototype [GameMaker 8.2 (but only using GameMaker 8.1 features)]
+# Team Warfare [GameMaker 8.2 (but only using GameMaker 8.1 features)]
 
 A simple **prototype inspired by Team Fortress 2**, developed in **GameMaker 8.2**.
 
