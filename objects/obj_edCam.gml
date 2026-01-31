@@ -129,7 +129,7 @@ action_id=603
 applies_to=self
 */
 if(view_current == 0){
-   d3d_set_projection_ext(x,y,z,x+cos(degtorad(direction)) * zdir,y-sin(degtorad(direction))*zdir,zdirt*16+z,0,0,1,100,1,0.1,410)
+   d3d_set_projection_ext(x,y,z,x+cos(degtorad(direction)) * zdir,y-sin(degtorad(direction))*zdir,zdirt*16+z,0,0,1,70,room_height/room_height,0.1,410)
 }
 #define KeyPress_32
 /*"/*'/**//* YYD ACTION
