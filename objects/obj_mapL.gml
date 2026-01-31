@@ -25,56 +25,56 @@ for(i=0;!file_text_eof(fName);i+=1){
     global.amapW=i+1
 
 }
-femboy=0
+aux=0
 for (i=0;i<global.amapW;i+=1){
     switch(global.amap[i,6]){
     case 1:
-    femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_floor)
-    femboy.x2=global.amap[i,0]
-    femboy.y2=global.amap[i,1]
-    femboy.z2=global.amap[i,2]
-    femboy.z1=global.amap[i,5]
-    femboy.tex=global.amap[i,7]
+    aux = instance_create(global.amap[i,3],global.amap[i,4],obj_floor)
+    aux.x2=global.amap[i,0]
+    aux.y2=global.amap[i,1]
+    aux.z2=global.amap[i,2]
+    aux.z1=global.amap[i,5]
+    aux.tex=global.amap[i,7]
 
     break;
-    case 2:femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_wall)
-    femboy.x2=global.amap[i,0]
-    femboy.y2=global.amap[i,1]
-    femboy.z2=global.amap[i,2]
-    femboy.z1=global.amap[i,5]
-    femboy.tex=global.amap[i,7]
+    case 2:aux = instance_create(global.amap[i,3],global.amap[i,4],obj_wall)
+    aux.x2=global.amap[i,0]
+    aux.y2=global.amap[i,1]
+    aux.z2=global.amap[i,2]
+    aux.z1=global.amap[i,5]
+    aux.tex=global.amap[i,7]
     break;
-    case 3:femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_cyl)
-    femboy.x2=global.amap[i,0]
-    femboy.y2=global.amap[i,1]
-    femboy.z2=global.amap[i,2]
-    femboy.z1=global.amap[i,5]
-    femboy.tex=global.amap[i,7]
+    case 3:aux = instance_create(global.amap[i,3],global.amap[i,4],obj_cyl)
+    aux.x2=global.amap[i,0]
+    aux.y2=global.amap[i,1]
+    aux.z2=global.amap[i,2]
+    aux.z1=global.amap[i,5]
+    aux.tex=global.amap[i,7]
     break;
     case 4:d3d_model_cone(map[global.amap[i,7]],global.amap[i,0],global.amap[i,1],global.amap[i,2],global.amap[i,3],global.amap[i,4],global.amap[i,5],1,1,1,20)
     break;
     case 5:d3d_model_block(map[global.amap[i,7]],global.amap[i,0],global.amap[i,1],global.amap[i,2],global.amap[i,3],global.amap[i,4],global.amap[i,5],1,1)
     break;
-    case 6:femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_corner)
-    femboy.x2=global.amap[i,0]
-    femboy.y2=global.amap[i,1]
-    femboy.z2=global.amap[i,2]
-    femboy.z1=global.amap[i,5]
-    femboy.tex=global.amap[i,7]
+    case 6:aux = instance_create(global.amap[i,3],global.amap[i,4],obj_corner)
+    aux.x2=global.amap[i,0]
+    aux.y2=global.amap[i,1]
+    aux.z2=global.amap[i,2]
+    aux.z1=global.amap[i,5]
+    aux.tex=global.amap[i,7]
     break;
     case 7:
-    femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_floor2)
-    femboy.x2=global.amap[i,0]
-    femboy.y2=global.amap[i,1]
-    femboy.z2=global.amap[i,2]
-    femboy.z1=global.amap[i,5]
-    femboy.tex=global.amap[i,7]
+    aux = instance_create(global.amap[i,3],global.amap[i,4],obj_floor2)
+    aux.x2=global.amap[i,0]
+    aux.y2=global.amap[i,1]
+    aux.z2=global.amap[i,2]
+    aux.z1=global.amap[i,5]
+    aux.tex=global.amap[i,7]
     break;
-    case 8:femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_play)
-    femboy.z=global.amap[i,5]
+    case 8:aux = instance_create(global.amap[i,3],global.amap[i,4],obj_play)
+    aux.z=global.amap[i,5]
     break;
-    case 9:femboy = instance_create(global.amap[i,3],global.amap[i,4],obj_light)
-    femboy.z=global.amap[i,5]
+    case 9:aux = instance_create(global.amap[i,3],global.amap[i,4],obj_light)
+    aux.z=global.amap[i,5]
     break;
     }
 
