@@ -3,7 +3,7 @@
 lib_id=1
 action_id=224
 invert=0
-arg0=rm_editor
+arg0=rm_neweditor
 arg1=0
 */
 #define Draw_0

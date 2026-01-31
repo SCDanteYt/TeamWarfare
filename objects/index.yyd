@@ -50,3 +50,5 @@ obj_editortitle
 obj_playgame
 object50
 obj_server
+obj_mapp
+obj_edCam

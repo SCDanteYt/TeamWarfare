@@ -28,3 +28,6 @@
 +online tests
 	|obj_mplaycntr
 	|obj_server
++neweditor
+	|obj_mapp
+	|obj_edCam
