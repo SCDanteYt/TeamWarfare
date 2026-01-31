@@ -1,5 +1,5 @@
 # Team Warfare
-
+**THIS PROJECT I HADNT TOUCHED IT IN YEARS I'M SORRY FOR MY SHITTY CODE**
 A simple **prototype inspired by Team Fortress 2**, developed in **GameMaker 8.2** only using **GameMaker 8.1** features.
 
 This project was created for the **Technical Skills Evaluation** at  
