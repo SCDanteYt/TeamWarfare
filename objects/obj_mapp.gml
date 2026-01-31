@@ -112,34 +112,41 @@ applies_to=self
 switch (view_current)
 {
     case 0:
+    d3d_set_perspective(true)
     for (i=0;i<256;i+=1){
       d3d_model_draw(map[i],0,0,0,i)
     }
     break
     case 1:
-      d3d_set_projection_ortho(0,0,800,600,0)
+      d3d_set_perspective(false)
+      d3d_set_projection(0,0,800,0,0,0,0,0,1)
+      /*
       for (i=0;i<256;i+=1){
          d3d_transform_set_identity()
          d3d_transform_add_rotation_x(270)
          d3d_model_draw(map[i],0,0,0,i)
-      }
+      }*/
     break
     case 2:
-      d3d_set_projection_ortho(0,0,800,600,0)
+      d3d_set_perspective(false)
+      d3d_set_projection(800,0,0,0,0,0,0,0,1)
+      /*
       for (i=0;i<256;i+=1){
          d3d_transform_set_identity()
          d3d_transform_add_rotation_x(270)
          d3d_transform_add_rotation_z(90)
          d3d_model_draw(map[i],0,0,0,i)
-      }
+      }*/
     break
     case 3:
-      d3d_set_projection_ortho(0,0,800,600,0)
+      d3d_set_perspective(false)
+      d3d_set_projection(0,800,0,0,0,0,0,0,1)
+      /*
       for (i=0;i<256;i+=1){
          d3d_transform_set_identity()
          d3d_transform_add_rotation_z(90)
          d3d_model_draw(map[i],0,0,0,i)
-      }
+      }*/
     break
 }
  d3d_transform_set_identity()

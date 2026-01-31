@@ -60,7 +60,7 @@ window_get_width() Returns the current width of the window.
 window_get_height() Returns the current height of the window.
 */
 
-if !keyboard_check(ord("F")){
+if keyboard_check(ord("F")){
 prevx=display_mouse_get_x()
 prevy=display_mouse_get_y()
 display_mouse_set(ofx ,ofy)
